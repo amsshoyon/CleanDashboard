@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Clean UI Admin Template Modular</title>
+    <link href="dist/modules/core/common/img/favicon.ico" rel="shortcut icon">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,400i,700,700i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,600,700,800,900" rel="stylesheet">
+
+    <!-- VENDORS -->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="dist/vendors/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/font-icomoon/style.css">
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="dist/vendors/perfect-scrollbar/css/perfect-scrollbar.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/ladda/dist/ladda-themeless.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/bootstrap-select/dist/css/bootstrap-select.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/select2/dist/css/select2.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/eonasdan-bootstrap-datetimepicker/build/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/fullcalendar/dist/fullcalendar.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/bootstrap-sweetalert/dist/sweetalert.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/summernote/dist/summernote.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/owl.carousel/dist/assets/owl.carousel.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/ionrangeslider/css/ion.rangeSlider.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/datatables/media/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/c3/c3.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/chartist/dist/chartist.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/nprogress/nprogress.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/jquery-steps/demo/css/jquery.steps.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/dropify/dist/css/dropify.min.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/font-linearicons/style.css">
+
+    
+    <link rel="stylesheet" type="text/css" href="dist/vendors/cleanhtmlaudioplayer/src/player.css">
+    <link rel="stylesheet" type="text/css" href="dist/vendors/cleanhtmlvideoplayer/src/player.css">
+    -->
+
+    <script src="dist/vendors/jquery/dist/jquery.min.js"></script>
+    <script src="dist/vendors/popper.js/dist/umd/popper.js"></script>
+    <script src="dist/vendors/jquery-ui/jquery-ui.min.js"></script>
+    <script src="dist/vendors/bootstrap/js/bootstrap.min.js"></script>
+
+    <!--
+    <script src="dist/vendors/jquery-mousewheel/jquery.mousewheel.min.js"></script>
+    <script src="dist/vendors/perfect-scrollbar/js/perfect-scrollbar.jquery.js"></script>
+    <script src="dist/vendors/spin.js/spin.js"></script>
+    <script src="dist/vendors/ladda/dist/ladda.min.js"></script>
+    <script src="dist/vendors/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="dist/vendors/select2/dist/js/select2.full.min.js"></script>
+    <script src="dist/vendors/html5-form-validation/dist/jquery.validation.min.js"></script>
+    <script src="dist/vendors/jquery-typeahead/dist/jquery.typeahead.min.js"></script>
+    <script src="dist/vendors/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
+    <script src="dist/vendors/autosize/dist/autosize.min.js"></script>
+    <script src="dist/vendors/bootstrap-show-password/bootstrap-show-password.min.js"></script>
+    <script src="dist/vendors/moment/min/moment.min.js"></script>
+    <script src="dist/vendors/eonasdan-bootstrap-datetimepicker/build/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="dist/vendors/fullcalendar/dist/fullcalendar.min.js"></script>
+    <script src="dist/vendors/bootstrap-sweetalert/dist/sweetalert.min.js"></script>
+    <script src="dist/vendors/remarkable-bootstrap-notify/dist/bootstrap-notify.min.js"></script>
+    <script src="dist/vendors/summernote/dist/summernote.min.js"></script>
+    <script src="dist/vendors/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="dist/vendors/ionrangeslider/js/ion.rangeSlider.min.js"></script>
+    <script src="dist/vendors/nestable/jquery.nestable.js"></script>
+    <script src="dist/vendors/datatables/media/js/jquery.dataTables.min.js"></script>
+    <script src="dist/vendors/datatables/media/js/dataTables.bootstrap4.js"></script>
+    <script src="dist/vendors/datatables-fixedcolumns/js/dataTables.fixedColumns.js"></script>
+    <script src="dist/vendors/datatables-responsive/js/dataTables.responsive.js"></script>
+    <script src="dist/vendors/editable-table/mindmup-editabletable.js"></script>
+    <script src="dist/vendors/d3/d3.min.js"></script>
+    <script src="dist/vendors/c3/c3.min.js"></script>
+    <script src="dist/vendors/chartist/dist/chartist.min.js"></script>
+    <script src="dist/vendors/peity/jquery.peity.min.js"></script>
+    <script src="dist/vendors/chartist-plugin-tooltip/dist/chartist-plugin-tooltip.min.js"></script>
+    <script src="dist/vendors/jquery-countTo/jquery.countTo.js"></script>
+    <script src="dist/vendors/nprogress/nprogress.js"></script>
+    <script src="dist/vendors/jquery-steps/build/jquery.steps.min.js"></script>
+    <script src="dist/vendors/chart.js/dist/Chart.bundle.min.js"></script>
+    <script src="dist/vendors/dropify/dist/js/dropify.min.js"></script>
+    <script src="dist/vendors/cleanhtmlaudioplayer/src/jquery.cleanaudioplayer.js"></script>
+    <script src="dist/vendors/cleanhtmlvideoplayer/src/jquery.cleanvideoplayer.js"></script>
+    -->
+
+    <!-- CLEAN UI ADMIN TEMPLATE MODULES-->
+    <!-- v2.0.0 -->
+    <link rel="stylesheet" type="text/css" href="dist/modules/core/common/core.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/vendors/common/vendors.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/layouts/common/layouts-pack.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/themes/common/themes.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/menu-left/common/menu-left.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/menu-right/common/menu-right.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/top-bar/common/top-bar.cleanui.css">
+
+
+    <!--    Modified Css-->
+    <link rel="stylesheet" href="src/assets/css/modified.css">
+
+    <!--
+    <link rel="stylesheet" type="text/css" href="dist/modules/footer/common/footer.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/pages/common/pages.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/ecommerce/common/ecommerce.cleanui.css">
+    <link rel="stylesheet" type="text/css" href="dist/modules/apps/common/apps.cleanui.css">
+    -->
+
+    <script src="dist/modules/menu-left/common/menu-left.cleanui.js"></script>
+    <!--<script src="dist/modules/menu-right/common/menu-right.cleanui.js"></script>-->
+
+</head>
+
+<body class="cat__config--vertical cat__config--compact cat__theme--light">
+    <div class="cat__top-bar">
+        <div class="cat__menu-left__logo">
+            <a href="dashboards-alpha.html">
+                <img src="src/assets/images/logo.png" alt="Logo" class="logo-lg" />
+                <img src="src/assets/images/logo-sm.png" alt="Logo" class="logo-sm" />
+            </a>
+        </div>
+        <div class="cat__menu-left__lock cat__menu-left__action--menu-toggle">
+            <div class="cat__menu-left__pin-button">
+                <div>
+                    <!-- -->
+                </div>
+            </div>
+        </div>
+        <!-- right aligned items -->
+        <div class="cat__top-bar__right">
+            <div class="cat__top-bar__item cat__top-bar_search">
+                <form action="" class="cat-top-bar-search-form">
+                    <label for="cat__top-bar_search" class="top-bar-search-btn">
+                        <img src="src/assets/images/search.png" alt="search">
+                    </label>
+                    <input type="text" id="cat__top-bar_search" placeholder="">
+                </form>
+            </div>
+            <div class="cat__top-bar__item cat-top-notification">
+                <div class="dropdown">
+                    <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <i class="menu-notification-icon">
+                            <img src="src/assets/images/notification.png" alt="notification">
+                            <span class="notification-indicator"></span>
+                        </i>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+
+                        <div class="cat__top-bar__activity">
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-star-full"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">now</span>
+                                        <a href="javascript: void(0);">Update Status: <span class="badge badge-danger">New</span></a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-stack"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">24 min ago</span>
+                                        <a href="javascript: void(0);">Income: <span class="badge badge-default">$299.00</span></a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-list"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">30 min ago</span>
+                                        <a href="javascript: void(0);">Inbox Message</a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        From: <a href="javascript: void(0);">David Bowie</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-home"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">now</span>
+                                        <a href="javascript: void(0);">Update Status: <span class="badge badge-primary">New</span></a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-loop"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">24 min ago</span>
+                                        <a href="javascript: void(0);">Income: <span class="badge badge-warning">$299.00</span></a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        Failed to get available update data. To ensure the proper functioning of your application, update now.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="cat__top-bar__activity__item">
+                                <i class="cat__top-bar__activity__icon icmn-cog cat__core__spin-delayed--pseudo-selector"></i>
+                                <div class="cat__top-bar__activity__inner">
+                                    <div class="cat__top-bar__activity__title">
+                                        <span class="pull-right">30 min ago</span>
+                                        <a href="javascript: void(0);">Inbox Message</a>
+                                    </div>
+                                    <div class="cat__top-bar__activity__descr">
+                                        From: <a href="javascript: void(0);">David Bowie</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </ul>
+                </div>
+            </div>
+            <div class="cat__top-bar__item">
+                <div class="dropdown ">
+                    <a href="javascript: void(0);" class="dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+                        <span class="cat__top-bar__avatar" href="javascript:void(0);">
+                            <img src="dist/modules/dummy-assets/common/img/avatars/1.jpg" />
+                        </span>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-right" aria-labelledby="" role="menu">
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-user"></i> Profile</a>
+                        <div class="dropdown-divider"></div>
+                        <div class="dropdown-header">Home</div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> System Dashboard</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> User Boards</a>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-circle-right"></i> Issue Navigator (35 New)</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="javascript:void(0)"><i class="dropdown-icon icmn-exit"></i> Logout</a>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="cat__menu-left">
+        <div class="cat__menu-left__inner">
+            <ul class="cat__menu-left__list cat__menu-left__list--root">
+
+                <li class="cat__menu-left__item cat__menu-left__item--active">
+                    <a href="/">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu1.png" alt="">
+                        </span>
+                        Dashboard
+                    </a>
+                </li>
+
+                <li class="cat__menu-left__item">
+                    <a href="#">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu2.png" alt="">
+                        </span>
+                        Projects
+                    </a>
+                </li>
+
+                <li class="cat__menu-left__item">
+                    <a href="#">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu3.png" alt="">
+                        </span>
+                        Collaborators
+                    </a>
+                </li>
+
+                <li class="cat__menu-left__item">
+                    <a href="#">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu4.png" alt="">
+                        </span>
+                        Testcase
+                    </a>
+                </li>
+
+                <li class="cat__menu-left__item">
+                    <a href="#">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu5.png" alt="">
+                        </span>
+                        Settings
+                    </a>
+                </li>
+
+                <li class="cat__menu-left__item">
+                    <a href="#">
+                        <span class="cat__menu-left__icon">
+                            <img src="src/assets/images/menu6.png" alt="">
+                        </span>
+                        Knowledge <br>
+                        Base
+                    </a>
+                </li>
+
+            </ul>
+        </div>
+    </nav>
+    <div class="cat__content">
+        <!-- START: dashboard alpha -->
+        <nav class="cat__core__top-sidebar cat__core__top-sidebar--bg">
+            <div class="cat__core__title d-block mb-2">
+                <strong>Dashboard</strong>
+            </div>
+            <div class="cat-top-right-side">
+                <p>
+                    As of <span>7 Jan 2019</span> | Campared to <span>12 Feb 2019</span>
+                </p>
+                <p>
+                    <span class="icon"><img src="src/assets/images/clock.svg" alt="icon"></span> Last Update <span>3 hours ago</span>
+                </p>
+            </div>
+        </nav>
+
+        <!-- END: dashboard alpha -->
+    </div>
+
+
+
+
+</body>
+
+</html>

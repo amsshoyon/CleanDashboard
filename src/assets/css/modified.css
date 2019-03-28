@@ -1,0 +1,360 @@
+/*-------------------------------------------------------------------------*/
+/*--------------------------Layout Styles: Start--------------------------*/
+/*-------------------------------------------------------------------------*/
+body {
+    font-family: 'Work Sans', sans-serif;
+}
+
+
+
+body.cat__config--vertical.cat__config--compact .cat__top-bar {
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.cat__menu-left__logo {
+    background: transparent;
+    display: flex;
+    align-items: center;
+}
+
+.cat__menu-left__logo .logo-sm {
+    display: none;
+}
+
+
+.cat__menu-left__list--root {
+    margin: 0;
+}
+
+body.cat__config--vertical.cat__config--compact .cat__menu-left {
+    width: 140px;
+    -webkit-transform: translate3d(-140px, 0, 0);
+    transform: translate3d(-140px, 0, 0);
+    box-shadow: 0 0 18px rgba(96, 96, 96, .3);
+    margin-top: 25px;
+}
+
+
+body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a {
+    padding: 20px.85rem;
+    font-size: 0.93rem;
+    text-transform: uppercase;
+    color: #8C8C8C;
+    background-color: #FEFEFE;
+}
+
+body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a:before {
+    width: 100%;
+    left: 0;
+}
+
+
+
+body.cat__config--vertical.cat__config--compact .cat__menu-left__item.cat__menu-left__item--active > a {
+    color: #4A4A4A;
+    background-color: #F7F9FC;
+}
+
+body.cat__config--vertical.cat__config--compact .cat__menu-left__item a:hover {
+    color: #20B7CE;
+}
+
+
+.cat__menu-left__list--root > .cat__menu-left__item:before {
+    width: 4px;
+    background: transparent;
+}
+
+.cat__menu-left__list--root > .cat__menu-left__item.cat__menu-left__item--active:before {
+    width: 4px;
+    background: #20B7CE;
+}
+
+.cat__menu-left__icon {
+    filter: grayscale(100%);
+}
+
+body.cat__theme--light .cat__menu-left__item--active > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:hover > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:active > a > .cat__menu-left__icon,
+body.cat__theme--light .cat__menu-left__item:focus > a > .cat__menu-left__icon {
+    filter: none;
+}
+
+/*topbar*/
+
+.cat__top-bar {
+    z-index: 9999;
+}
+
+.cat__top-bar {
+    background: #002477;
+    background: rgb(1, 48, 117);
+    background: -moz-linear-gradient(left, rgba(1, 48, 117, 1) 0%, rgba(1, 85, 147, 1) 50%, rgba(0, 216, 252, 1) 100%);
+    background: -webkit-linear-gradient(left, rgba(1, 48, 117, 1) 0%, rgba(0, 216, 252, 1) 100%);
+    background: linear-gradient(to right, rgba(1, 48, 117, 1) 0%, rgba(0, 216, 252, .2) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#013075', endColorstr='#00d8fc', GradientType=1);
+    background-color: #001870;
+}
+
+.cat__menu-left__lock {
+    right: auto;
+    left: 0;
+    height: 100%;
+}
+
+
+
+.cat-top-notification .dropdown .dropdown-toggle:after {
+    display: none;
+}
+
+.cat__top-bar__right .menu-notification-icon {
+    position: relative;
+}
+
+.cat__top-bar__right .menu-notification-icon .notification-indicator {
+    position: absolute;
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: #20B7CE;
+    border-radius: 50%;
+    top: 2px;
+    right: 1px;
+    z-index: 9999;
+}
+
+.cat__top-bar__item .dropdown-menu.dropdown-menu-right {
+    margin-top: 10px;
+}
+
+.cat__top-bar__item.cat-top-notification .dropdown-menu.dropdown-menu-right {
+    margin-top: 20px;
+}
+
+.cat__top-bar__right .cat-top-bar-search-form {
+    position: relative;
+}
+
+.cat__top-bar__right .cat-top-bar-search-form .top-bar-search-btn {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+.cat__top-bar__right #cat__top-bar_search {
+    position: absolute;
+    right: 0;
+    top: 3px;
+    z-index: -1;
+    background-color: rgba(203, 203, 203, 0.33);
+    border: none;
+    width: 0;
+    transition: all .3s ease-in-out;
+    height: 40px;
+    border-radius: 25px;
+    width: 0px;
+    color: #fff;
+    font-size: 18px;
+
+}
+
+.cat__top-bar__right .cat-top-bar-search-form:hover #cat__top-bar_search,
+input#cat__top-bar_search:focus,
+#cat__top-bar_search:active {
+    width: 250px;
+    padding: 0px 20px;
+    padding-right: 45px;
+}
+
+.cat__content {
+    padding-top: 0;
+}
+
+.cat__core__top-sidebar--bg {
+    padding: 1.42rem 2.42rem 1.07rem;
+}
+
+.cat__core__title {
+    font-size: 1.78rem;
+    color: #393749;
+    font-weight: 100;
+    text-transform: uppercase;
+}
+
+.cat__core__top-sidebar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cat__core__top-sidebar .cat-top-right-side {
+    text-align: right;
+    position: relative;
+}
+
+.cat-top-right-side:after {
+    content: '';
+    height: 45px;
+    width: 1px;
+    background-color: #C8C9C9;
+    position: absolute;
+    left: -25px;
+    top: -3px;
+}
+
+.cat__core__top-sidebar .cat-top-right-side span {
+    color: #20B7CE;
+    font-size: .93rem;
+}
+
+.cat__core__top-sidebar .cat-top-right-side p {
+    margin-bottom: 0px;
+    color: #4A4B4B;
+}
+
+.cat-top-right-side .icon {
+    margin-right: 10px;
+}
+
+.cat-top-right-side .icon img {
+    width: 13px;
+    margin-top: -2px;
+}
+
+/*-------------------------------------------------------------------------*/
+/*----------------------------Responsive Styles----------------------------*/
+/*-------------------------------------------------------------------------*/
+
+@media (max-width: 480px) {
+    .cat__core__top-sidebar {
+        justify-content: space-evenly;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .cat__core__title {
+        position: relative;
+    }
+
+    .cat__core__title:after {
+        content: '';
+        width: 150%;
+        height: 1px;
+        background-color: #C8C9C9;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .cat-top-right-side {
+        text-align: center !important;
+    }
+
+    .cat-top-right-side:after {
+        display: none;
+    }
+}
+
+@media (max-width: 660px) {
+    .cat__menu-left__logo .logo-sm {
+        display: block;
+    }
+
+    .cat__menu-left__logo .logo-lg {
+        display: none;
+    }
+
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__logo {
+        width: 60px;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    body.cat__config--vertical.cat__config--compact .cat__content {
+        margin-left: 140px;
+        margin-top: 45px;
+    }
+
+    body.cat__config--vertical.cat__config--compact .cat__menu-left {
+        -webkit-transform: none;
+        -ms-transform: none;
+        transform: none;
+        -webkit-transition: none !important;
+        -o-transition: none !important;
+        transition: none !important;
+        width: 140px;
+    }
+
+    body.cat__config--vertical.cat__config--compact .cat__top-bar {
+        height: 90px
+    }
+
+    .cat__menu-left__logo {
+        padding: 0;
+        height: 100%;
+        padding-left: 15px;
+    }
+
+    .cat__menu-left__logo a {
+        display: block;
+    }
+
+    .cat__menu-left__logo img {
+        max-height: 60px;
+        max-width: max-content;
+        vertical-align: middle;
+    }
+
+    .cat__top-bar__item .dropdown-menu.dropdown-menu-right {
+        margin-top: 25px;
+    }
+
+    .cat__top-bar__item.cat-top-notification .dropdown-menu.dropdown-menu-right {
+        margin-top: 35px;
+    }
+
+    .cat__core__top-sidebar {
+        max-height: 75px;
+    }
+}
+
+@media (max-width: 768px) {
+    body.cat__config--vertical.cat__config--compact .cat__menu-left {
+        box-shadow: none;
+    }
+
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a {
+        padding: 0;
+        height: 55px;
+        display: flex;
+        align-items: center;
+    }
+
+    span.cat__menu-left__icon img {
+        width: 20px;
+    }
+
+    span.cat__menu-left__icon {
+        left: 10px;
+        max-width: 50px;
+        display: flex;
+        align-items: center;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+
+    body.cat__config--vertical.cat__config--compact .cat__menu-left__item > a {
+        padding-left: 35px;
+    }
+
+}
+
+/*-------------------------------------------------------------------------*/
+/*--------------------------Layout Styles: End--------------------------*/
+/*-------------------------------------------------------------------------*/
